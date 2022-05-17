@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+
+
+/* Sections Styling */
+
+main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px hsl(218, 22%, 67%);
+}
+
+.section-up {
+    background-color: white;
+    width: 625px;
+    border-radius: 7.5px 7.5px 0 0;
+    padding: 25px 30px;
+}
+
+.section-up h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.section-up h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.section-up p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0px 60px 15px 0;
+}
+
+.section-down {
+    display: flex;
+    flex-direction: row;
+    width: 625px;
+    height: 250px;
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    border-radius: 0 0 0 7.5px;
+    padding: 15px 30px 25px 30px;
+}
+
+.left h2 {
+    color: white;
+    font-size: 19px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.left h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.left h4 {
+    color: hsla(203, 44%, 93%, 0.644);
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.left p {
+    color: whitesmoke;
+    margin: 0 0 35px 0;
+}
+
+.left a {
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    padding: 12px 90px;
+    border-radius: 3px;
+    box-shadow: 5px 2px 15px hsl(203deg 5% 39% / 64%);
+}
+
+.right {
+    background-color: hsla(179, 47%, 52%, 1);
+    width: 50%;
+    border-radius: 0 0 7.5px 0;
+    padding: 15px 30px 25px 30px;
+}
+
+.right h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.right p {
+    color: hsl(204, 43%, 90%);
+    font-size: 12px;
+    margin: 5px 75px 0 0;
+    line-height: 1.5;
+}
+
+@media (max-width:375px) {
+    main {
+        width: 300px;
+        height: 700px;
+        box-shadow: 5px 2px 15px hsl(203deg 5% 39% / 64%);
+    }
+    .section-up {
+        width: 300px;
+        padding: 15px 30px;
+    }
+    .section-up p {
+        line-height: 1.75;
+        font-size: 12px;
+        margin: 0 0px 15px 0px;
+    }
+    .section-down {
+        flex-direction: column;
+        width: 300px;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .left {
+        border-radius: 0;
+    }
+    .right {
+        border-radius: 0 0 7.5px 7.5px;
+    }
+}
